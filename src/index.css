@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Play');
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +13,64 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Nav {
+  position: fixed;
+  width: 100%;
+  height: 25px;
+  padding: 45px 0;
+  z-index: 100;
+  background: rgba(28, 23, 100, 0.5);
+}
+
+.NavGroup {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-items: center;
+  color: white;
+}
+
+.NavText {
+  font-family: 'Lobster', cursive; 
+  font-size: 30px;
+}
+
+.NavButton {
+  font-size: 20px;
+  padding: 8px 20px;
+  background: paleturquoise;
+  border: none;
+  font-weight: 100;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.Hero {
+  background: url('./images/background-binary.jpg');
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/background-binary.jpg'); */
+  height: 900px;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.HeroGroup {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 150px 50px;
+  text-align: center;
+  
+}
+
+.HeroText {
+  margin: 0;
+  color: rgb(28, 43, 124);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
 }
