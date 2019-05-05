@@ -1,7 +1,12 @@
 import React from 'react'
 import image from '../src/images/bitcoin-logo-3.png'
 
-const Nav = () => (
+
+
+const Nav = () => {
+    
+
+    return(
 <div className='Nav'>
     <div className='NavGroup'>
         <img src={image} width='80' alt='blue bitcoin symbol' />
@@ -9,6 +14,6 @@ const Nav = () => (
         <button className='NavButton'>Dark</button>
     </div>
 </div>
-)
+)}
 
 export default Nav

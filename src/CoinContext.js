@@ -1,6 +1,5 @@
 import React, {useState, useEffect, createContext} from 'react'
 
-
 export const CoinContext = createContext()
 
 export const CoinProvider = (props) => {
@@ -13,8 +12,10 @@ export const CoinProvider = (props) => {
 
     })
 
+    
+
     return (
-        <CoinContext.Provider>
+        <CoinContext.Provider value={coins}>
             {props.children}
         </CoinContext.Provider>
     )
