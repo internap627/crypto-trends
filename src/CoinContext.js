@@ -10,12 +10,12 @@ export const CoinProvider = (props) => {
         .then(res => res.json())
         .then(json => setCoins(json))
 
-    })
+    }, [])
 
     
 
     return (
-        <CoinContext.Provider value={coins}>
+        <CoinContext.Provider value={coins && coins}>
             {props.children}
         </CoinContext.Provider>
     )

@@ -1,12 +1,12 @@
 import React from 'react'
 import image from './images/stock.jpg'
 
-const Card = () => (
+const Card = ({coin}) => (
     <div className='Card'>
         <img src={image} alt='stock-chart-card' />
-        <h3>Bitcoin</h3>
-        <p>#1</p>
-        <h5>50%</h5>
+        <h3>{coin.name}</h3>
+        <p>#{coin.rank}</p>
+        <h5>{coin.percent_change_24h}%</h5>
         
     </div>
 )
