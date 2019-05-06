@@ -3,13 +3,13 @@ import Card from './Card'
 import {CoinContext} from './CoinContext'
 
 const Section = () => {
-    const coins = useContext(CoinContext)
-    console.log(coins)
+    const gainers = useContext(CoinContext)
+    console.log(gainers)
 
     return (
         <div className='CardGroup'>
         <h2>Winners</h2>
-        {coins.map(coin => <Card key={coin.id} coin={coin} />)}
+        {gainers.map(coin => <Card key={coin.id} coin={coin} />)}
       </div>
     )
 }
