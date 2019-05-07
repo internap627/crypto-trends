@@ -38,7 +38,7 @@ code {
 
 .NavText {
   font-family: 'Lobster', cursive; 
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .NavButton {
@@ -55,7 +55,7 @@ code {
 .Hero {
   background: url('./images/background-binary.jpg');
   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/background-binary.jpg'); */
-  height: 900px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   
@@ -70,7 +70,7 @@ code {
 }
 
 .HeroText {
-  margin: 0;
+  /* margin: 0; */
   color: rgb(28, 43, 124);
   font-weight: 600;
   font-size: 40px;
@@ -88,7 +88,7 @@ code {
     font-size: 30px;
   }
   .HeroGroup {
-    padding: 130px 50px;
+    /* padding: 130px 50px; */
   }
 }
 
@@ -104,9 +104,40 @@ code {
   }
 }
 
+.CardGroup h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: 50px 20px;
+  font-weight: 500px;
+  background: linear-gradient(104deg, rgb(9, 17, 27) 0%, rgb(88, 100, 153) 100% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.Cards {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  justify-items: center;
+}
+
+@media (max-width: 1000px) {
+  .Cards {
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .Cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .Card {
-  width: 300px;
-  height: 225px;
+  width: 250px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   border: solid rgb(14, 196, 14) 10px;
