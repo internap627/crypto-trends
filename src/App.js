@@ -14,8 +14,8 @@ function App() {
     <div className="App">
       <Nav />
       <Hero />
-      <Section />
-      
+      <Section title={'Winners'}/>
+      <Section title={'Losers'}/>
     </div>
   </CoinProvider> 
   );

@@ -12,14 +12,19 @@ export const CoinProvider = (props) => {
 
     }, [])
 
-    const gainers = () => {
-        return coins.sort((a,b) => b.percent_change_24h - a.percent_change_24h)
+    const gainers = (arr) => {
+        return arr.sort((a,b) => b.percent_change_24h - a.percent_change_24h)
+                .slice(0,10)
+    }
+
+    const losers = (arr) => {
+        return arr.sort((a,b) => a.percent_change_24h - b.percent_change_24h)
                 .slice(0,10)
     }
     
 
     return (
-        <CoinContext.Provider value={gainers()}>
+        <CoinContext.Provider value={{gainers: gainers(coins), losers: losers(coins)}}>
             {props.children}
         </CoinContext.Provider>
     )
