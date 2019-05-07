@@ -10,7 +10,7 @@ const Section = ({title}) => {
         <div className='CardGroup'>
         <h2>{title}</h2>
         <div className='Cards'>
-        {coins.map(coin => <Card key={coin.id} coin={coin} />)}
+        {coins.map(coin => <Card key={coin.id} coin={coin} title={title} />)}
         </div>
       </div>
     )

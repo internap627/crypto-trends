@@ -186,3 +186,55 @@ code {
   color: rgb(14, 196, 14);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+.Card2 {
+  width: 250px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border: solid rgb(167, 51, 16) 10px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: 1s;
+}
+
+.Card2:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5)
+}
+
+.Card2:hover img {
+  transform: translateY(-20px);
+}
+
+.Card2 img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  height: 110%;
+  transition: 1s;
+}
+
+.Card2 h3 {
+  opacity: 0.8;
+  font-size: 25px;
+  margin: 20px;
+  width: 50px;
+  text-transform: uppercase;
+}
+
+.Card2 p {
+  margin: 25px auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Card2 h5 {
+  margin: auto;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(182, 57, 19);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
