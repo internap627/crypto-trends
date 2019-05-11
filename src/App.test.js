@@ -1,8 +1,14 @@
-import {sum} from './Calc'
+import {functions} from './Funtions'
+import { async } from 'q';
 
-test('sum', () => {
-    expect(sum(4,4)).toEqual(8)
+
+
+
+test('fetch username Bret', async () => {
+    expect.assertions(1)
+    
+    const data = functions.fetchUser()
+    expect(data).toBe('Bret')
+    
+  
 })
-
-
-
