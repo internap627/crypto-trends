@@ -55,7 +55,7 @@ code {
 .Hero {
   background: url('./images/background-binary.jpg');
   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/background-binary.jpg'); */
-  height: 500px;
+  height: 300px;
   background-size: cover;
   background-position: center;
   
